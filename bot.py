@@ -4,7 +4,8 @@ import discord
 from discord.ext import commands
 from return_token import return_token
 
-client = commands.Bot(command_prefix=".")
+intents = discord.Intents.all()
+client = commands.Bot(command_prefix=".", intents = intents)
 
 TOKEN = return_token()
 CHANNEL = 768231963890024480
